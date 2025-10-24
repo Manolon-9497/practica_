@@ -1,0 +1,99 @@
+/* styles/estilo-tienda.css */
+
+/* --- Importar Fuente "Six Caps" --- */
+@import url('https://fonts.googleapis.com/css2?family=Six+Caps&display=swap');
+
+/* --- Estilo del fondo --- */
+html {
+    /* Ruta CORREGIDA: ../images/art-background4.jpg */
+    background: url('../images/art-background4.jpg') no-repeat center center fixed;
+    
+    /* Reglas para cubrir toda la pantalla */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* --- Estilos generales del body --- */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    line-height: 1.4;
+}
+
+/* --- Header --- */
+header {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    /* Fondo blanco con 90% de opacidad */
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-family: 'Six Caps', sans-serif; /* Fuente solicitada */
+    font-size: 4em;
+    color: #000;
+    font-weight: normal;
+    line-height: 1;
+}
+
+header h2 {
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 5px;
+}
+
+/* --- Artículo --- */
+article {
+    position: absolute;
+    top: 250px;
+    left: 50px;
+    width: 400px;
+    /* Fondo blanco con 90% de opacidad */
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+article h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+article p {
+    margin-bottom: 10px;
+}
+
+/* Párrafo del contador */
+article p:nth-of-type(2) {
+    /* Fondo negro con 70% de opacidad */
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    display: inline-block;
+}
+
+/* Footer del artículo */
+article footer {
+    border-top: 1px solid #ddd;
+    margin-top: 15px;
+    padding-top: 15px;
+}
+
+article footer a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+article footer img {
+    vertical-align: middle;
+    margin-left: 5px;
+}
